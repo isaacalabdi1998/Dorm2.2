@@ -1,0 +1,239 @@
+
+body {
+    font-family: 'Almarai', sans-serif;
+}
+
+
+/* Start About us ------------------------------------------------------------------------------------------------- */
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EEE; 
+}
+.about-us .aboutus-content {
+    position: relative;
+    overflow: hidden;
+}
+.about-us .aboutus-content:before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 0;
+}
+.about-us  h2 {
+    margin: 20px auto;
+    width: 118px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--main-color);
+    padding: 2px 5px;
+    font-weight: bold;
+}
+.about-us .aboutus-content .left,
+.about-us .aboutus-content .right {
+    width: calc(50% - 25px);
+    margin-bottom: 40px;
+    position: relative;
+}
+@media (max-width: 767px) {
+    .about-us .aboutus-content .left, 
+    .about-us .aboutus-content .right {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .about-us .aboutus-content .left:before, 
+    .about-us .aboutus-content .right:before {
+    display: none;
+    }
+    .about-us .aboutus-content .left .content:before,
+    .about-us .aboutus-content .right .content:before {
+    display: none;
+    }
+}
+.about-us .aboutus-content .left {
+    float: left;
+}
+.about-us .aboutus-content .left:before {
+    right: -32px;
+}
+.about-us .aboutus-content .right {
+    float: right;
+}
+.about-us .aboutus-content .right:before {
+    left: -32px;
+}
+.about-us .aboutus-content .left:before,
+.about-us .aboutus-content .right:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #FFF;
+    border: 3px solid var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+}
+.about-us .aboutus-content .content {
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;  
+}
+.about-us .aboutus-content .content h3 {
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 0 10px;
+    text-align: center;
+}
+.about-us .aboutus-content .content p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+    text-align: right;
+}
+.about-us .aboutus-content .content p.special-paragraph {
+    text-align: center;
+}
+.about-us .aboutus-content .content ul {
+    margin: 0 20px; 
+    padding: 0;
+    direction:rtl;
+}
+.about-us .aboutus-content .content ul li {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    margin: 0;
+    line-height: 2;
+    direction:rtl;
+    text-align: right;
+}
+.clearfix {
+    clear: both;
+}
+.about-us .aboutus-content .left .content:before {
+    content: '';
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent transparent #FFF;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+}
+.about-us .aboutus-content .right .content:before {
+    content: '';
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #FFF transparent transparent ;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+}
+/* End   About us ------------------------------------------------------------------------------------------------- */  
+
+
+/* Start Testimonials -------------------------------------------------------------------------------------------- */
+.testimonials {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.testimonials  {
+    direction: rtl;
+}
+.testimonials:before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ff181c;
+    height: 100%;
+}
+.testimonials:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:  #293c4e;
+    height: 100%;
+}
+.testimonials h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+    margin: 0 0 30px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 767px) {
+    .testimonials h2 {
+    text-align: center;
+    }
+}
+.testimonials .ts-box {
+    position: relative;
+    z-index: 2;
+    width: calc(98% / 3);
+    float: right;   /*===========================================*/
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 3%;
+}
+@media (max-width: 767px) {
+    .testimonials .ts-box {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+    }
+}
+.testimonials .ts-box:not(:last-of-type) {
+    margin-left: 1%;
+}
+.testimonials .ts-box > p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #707070;
+    font-style: italic;  
+    /* text-align: right; */
+}
+.testimonials .ts-box .person-info {
+    overflow: hidden;
+}
+@media (max-width: 991px) {
+    .testimonials .ts-box .person-info {
+    text-align: center;
+    overflow: visible;
+    }
+}
+.testimonials .ts-box .person-info img {
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 80px;
+}
+@media (max-width: 991px) {
+    .testimonials .ts-box .person-info img {
+    float: none;
+    margin-right: 0;
+    }
+}
+.testimonials .ts-box .person-info h4 {
+    margin: 14px 0 10px;
+}
+.testimonials .ts-box .person-info p {
+    color: #707070;
+    margin: 0;
+}
+  /* End Testimonials ------------------------------------------------------------------------------------------- */
